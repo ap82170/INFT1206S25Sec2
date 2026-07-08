@@ -1,3 +1,9 @@
+/*
+    Name: Parth Dalwadi
+    File:script.js
+    Date:08 July, 2026
+    Description:This file contains letter which is the first part of assignment4.
+*/
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
