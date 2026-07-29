@@ -1,3 +1,10 @@
+/*
+  Name: Parth Dalwadi
+  File: script.js
+  Date: 29 July, 2026
+  Description: This file contains the JavaScript for Part 4 of Assignment 4.
+*/
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
