@@ -1,4 +1,9 @@
-
+/*
+    Name: Parth Dalwadi
+    File: script.js
+    Date: 28 July 2026
+    Description: This file contains the JavaScript for the bouncing balls activity in Assignment 4 Part 3.
+*/
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
