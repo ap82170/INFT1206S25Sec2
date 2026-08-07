@@ -1,3 +1,10 @@
+/*
+Name: Parth Dalwadi
+File: main.js
+Date: 08 July, 2026
+Description: This file contains the interactive functions for the accessible wildlife webpage for Part 1 of Assignment 5.
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
