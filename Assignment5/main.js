@@ -1,7 +1,7 @@
 /*
 Name: Parth Dalwadi
 File: main.js
-Date: 08 July, 2026
+Date: 07 August, 2026
 Description: This file contains the interactive functions for the accessible wildlife webpage for Part 1 of Assignment 5.
 */
 
@@ -13,12 +13,15 @@ const commentWrapper = document.querySelector('.comment-wrapper');
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.textContent;
-  if(showHideText === 'Show comments') {
+  const showHideText = showHideBtn.textContent.trim();
+
+  if (showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
+    showHideBtn.setAttribute('aria-expanded', 'true');
     commentWrapper.style.display = 'block';
   } else {
     showHideBtn.textContent = 'Show comments';
+    showHideBtn.setAttribute('aria-expanded', 'false');
     commentWrapper.style.display = 'none';
   }
 };
