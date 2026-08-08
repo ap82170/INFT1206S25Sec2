@@ -19,7 +19,7 @@ html {
 
 body {
   width: 80%;
-  min-width: 1024px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -275,4 +275,57 @@ caption {
 
 th {
   text-align: center;
+}
+
+/* Keyboard accessibility */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.6rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 95%;
+  }
+
+  nav {
+    height: auto;
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
